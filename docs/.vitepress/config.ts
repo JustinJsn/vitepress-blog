@@ -1,5 +1,5 @@
 import nav from "./config/nav";
-import { sidebarDataStructure } from "./config/sidebar";
+import { sidebarDataStructure, sidebarWebpack } from "./config/sidebar";
 
 export default {
   title: "JustinJsn博客",
@@ -8,7 +8,8 @@ export default {
   themeConfig: {
     nav: nav(),
     sidebar: {
-      "/大话数据结构": sidebarDataStructure(),
+      "/笔记/大话数据结构": sidebarDataStructure(),
+      "/文档/webpack": sidebarWebpack(),
     },
     footer: {
       message: "MIT License",
