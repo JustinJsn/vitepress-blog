@@ -4,6 +4,7 @@ import { sidebarDataStructure } from "./config/sidebar";
 export default {
   title: "JustinJsn博客",
   lastUpdated: true,
+  outDir: "/var/www/html",
   themeConfig: {
     nav: nav(),
     sidebar: {
