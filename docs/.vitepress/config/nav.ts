@@ -14,7 +14,7 @@ export default function nav() {
       items: [
         {
           text: "webpack",
-          link: "/文档/webpack/01-新手上路",
+          link: "/文档/webpack/01-webpack安装&配置",
         },
       ],
     },
