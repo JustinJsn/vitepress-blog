@@ -1,20 +1,20 @@
 ---
 layout: home
 
-title: VitePress
-titleTemplate: Vite & Vue Powered Static Site Generator
+title: JustinJsn博客
+titleTemplate:
 
 hero:
-  name: VitePress
-  text: Vite & Vue Powered Static Site Generator
-  tagline: Simple, powerful, and performant. Meet the modern SSG framework you've always wanted.
+  name: JustinJsn博客
+  text:
+  tagline:
   actions:
     - theme: brand
       text: Get Started
-      link: /guide/getting-started
+      link: /文档/webpack/01-webpack安装&配置
     - theme: alt
       text: View on GitHub
-      link: https://github.com/vuejs/vitepress
+      link: https://github.com/JustinJsn/vitepress-blog
 
 features:
   - title: "Vite: The DX that can't be beat"
