@@ -1,10 +1,10 @@
+import path from "path";
 import { defineConfig } from "vitepress";
 import mathjax3 from "markdown-it-mathjax3";
 import nav from "./config/nav";
 import { sidebarDataStructure, sidebarWebpack } from "./config/sidebar";
 
 const customElements = ["mjx-container"];
-
 export default defineConfig({
   title: "JustinJsn博客",
   lastUpdated: true,

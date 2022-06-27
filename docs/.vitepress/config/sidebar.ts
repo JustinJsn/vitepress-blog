@@ -12,6 +12,7 @@ export function sidebarDataStructure() {
           link: "/笔记/大话数据结构/01-数据结构绪论",
         },
         { text: "第 2 章 算法", link: "/笔记/大话数据结构/02-算法" },
+        { text: "第 3 章 线性表", link: "/笔记/大话数据结构/03-线性表" },
       ],
     },
   ];
