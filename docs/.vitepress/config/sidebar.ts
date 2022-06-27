@@ -26,6 +26,7 @@ export function sidebarWebpack() {
       items: [
         { text: "安装和配置", link: "/文档/webpack/01-安装和配置" },
         { text: "静态资源处理", link: "/文档/webpack/02-静态资源处理" },
+        { text: "打包输出处理", link: "/文档/webpack/03-打包输出处理" },
       ],
     },
   ];
