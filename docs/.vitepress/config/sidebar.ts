@@ -28,6 +28,8 @@ export function sidebarWebpack() {
         { text: "静态资源处理", link: "/文档/webpack/02-静态资源处理" },
         { text: "打包输出处理", link: "/文档/webpack/03-打包输出处理" },
         { text: "开发环境", link: "/文档/webpack/04-开发环境" },
+        { text: "代码切割", link: "/文档/webpack/05-代码切割" },
+        { text: "未完待续", link: "/文档/webpack/to-be-continued" },
       ],
     },
   ];
