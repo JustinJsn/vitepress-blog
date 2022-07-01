@@ -51,4 +51,4 @@ list.length++;
 
 list.insertElement("我是插入的元素", 2);
 
-console.log(list.head.next.next); // 插入的元素
+console.log(list.head); // 插入的元素
