@@ -14,6 +14,7 @@ export function sidebarDataStructure() {
         { text: "第 2 章 算法", link: "/笔记/大话数据结构/02-算法" },
         { text: "第 3 章 线性表", link: "/笔记/大话数据结构/03-线性表" },
         { text: "第 4 章 栈和队列", link: "/笔记/大话数据结构/04-栈和队列" },
+        { text: "第 5 章 串", link: "/笔记/大话数据结构/05-串" },
       ],
     },
   ];
