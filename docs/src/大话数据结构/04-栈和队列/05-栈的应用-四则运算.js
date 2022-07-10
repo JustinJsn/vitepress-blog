@@ -2,7 +2,7 @@ function calculate(expressions) {
   const start = +new Date();
   const operateExp = /(\+|\-|\*|\/|\(|\))/i;
   const numExp = /\d+/;
-  const operateArr = expressions.split(operateExp).filter(item => !!item);
+  const operateArr = expressions.split(operateExp).filter((item) => !!item);
   /** 后缀表达式存储栈 */
   const stack = [];
   /** 中缀表达式中操作符提取存储栈 */
@@ -20,9 +20,9 @@ function calculate(expressions) {
       continue;
     }
     if (operateExp.test(target)) {
-      // 特殊情况 => 加号和减号必须和栈顶比较优先级，如果优先级低于栈低，则全部原有的全部出栈
+      // 特殊情况 => 加号和减号必须和栈顶比较优先级，如果优先级低于或等于栈底，则全部原有的全部出栈
       if (/(\+|\-)/.test(target)) {
-        if (/(\*|\/)/.test(operateStack[operateStack.length - 1])) {
+        if (/(\*|\/|\+|\-)/.test(operateStack[operateStack.length - 1])) {
           while (operateStack.length) {
             const value = operateStack.pop();
             if (!/(\(|\))/.test(value)) {
@@ -38,7 +38,9 @@ function calculate(expressions) {
       // 如果是右括号，则在左括号前的数据元素全部出栈
       if (/\)/.test(target)) {
         while (operateStack.length) {
-          const isLeftBrackets = /\(/.test(operateStack[operateStack.length - 1]);
+          const isLeftBrackets = /\(/.test(
+            operateStack[operateStack.length - 1]
+          );
           if (!isLeftBrackets) {
             const value = operateStack.pop();
             stack.push(value);
@@ -57,7 +59,7 @@ function calculate(expressions) {
   }
   // 2. 将存储操作符的栈清空，加入到后缀表达式的栈中
   while (operateStack.length) {
-    stack.push(operateStack.pop())
+    stack.push(operateStack.pop());
   }
 
   // 3. 开始操作 stack 出栈计算
@@ -71,7 +73,7 @@ function calculate(expressions) {
       const right = resultStack.pop();
       const left = resultStack.pop();
 
-      const fn = new Function(`return ${left}${target}${right}`);
+      const fn = new Function(`return ${left}${target}(${right})`);
       resultStack.push(fn());
       // const calc = eval(`${left}${target}${right}`);
     }
@@ -81,12 +83,13 @@ function calculate(expressions) {
     }
   }
 
-  console.log(`计算结果为: ${result}; 计算总耗时: ${+new Date - start}ms`)
+  console.log(`计算结果为: ${result}; 计算总耗时: ${+new Date() - start}ms`);
   // return result;
 }
 calculate("1+30/3");
 calculate("(1+52)*5-6");
 calculate("9+(3-1)*3+10/2");
+calculate("2-1+2");
 
 // console.log(calculate("1+30/3")); // 11
 // console.log(calculate("(1+52)*5-6")); // 259
