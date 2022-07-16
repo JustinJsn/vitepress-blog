@@ -1,11 +1,15 @@
 import { defineConfig } from "vitepress";
 import mathjax3 from "markdown-it-mathjax3";
 import nav from "./config/nav";
-import { sidebarDataStructure, sidebarWebpack } from "./config/sidebar";
+import {
+  sidebarDataStructure,
+  sidebarWebpack,
+  sidebarLinux,
+} from "./config/sidebar";
 
 const customElements = ["mjx-container"];
 export default defineConfig({
-  base: "/vitepress-blog",
+  base: "/vitepress-blog/",
   title: "JustinJsn博客",
   lastUpdated: true,
   markdown: {
@@ -25,6 +29,7 @@ export default defineConfig({
     sidebar: {
       "/笔记/大话数据结构": sidebarDataStructure(),
       "/文档/webpack": sidebarWebpack(),
+      "/文档/Linux": sidebarLinux(),
     },
     footer: {
       message: "MIT License",

@@ -37,3 +37,16 @@ export function sidebarWebpack() {
     },
   ];
 }
+
+export function sidebarLinux() {
+  return [
+    {
+      text: "Linux",
+      collapsible: true,
+      items: [
+        { text: "Nginx安装", link: "/文档/Linux/01-安装Nginx" },
+        { text: "Linux基本命令", link: "/文档/Linux/02-Linux基本命令" },
+      ],
+    },
+  ];
+}

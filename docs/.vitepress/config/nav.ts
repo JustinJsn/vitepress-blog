@@ -16,6 +16,10 @@ export default function nav() {
           text: "webpack",
           link: "/文档/webpack/01-安装和配置",
         },
+        {
+          text: "Linux",
+          link: "/文档/Linux/01-安装Nginx",
+        },
       ],
     },
   ];
