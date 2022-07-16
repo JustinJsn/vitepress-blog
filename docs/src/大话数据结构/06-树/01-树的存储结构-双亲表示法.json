@@ -1,0 +1,14 @@
+[
+  {
+    "data": "A",
+    "parent": -1
+  },
+  {
+    "data": "B",
+    "parent": 0
+  },
+  {
+    "data": "C",
+    "parent": 0
+  }
+]

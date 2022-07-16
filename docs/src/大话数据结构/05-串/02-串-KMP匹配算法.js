@@ -1,4 +1,3 @@
-
 /**
  * 获取 next 前缀表
  * @param {String} subStr 模式串
@@ -47,7 +46,7 @@ function index_KMP(str, subStr) {
   let i = 0;
   let j = 0;
   const next = getNext(subStr);
-  console.log(next)
+  console.log(next);
 
   while (i < str.length && j < subStr.length) {
     if (str[i] === subStr[j]) {
@@ -65,41 +64,40 @@ function index_KMP(str, subStr) {
     return i - subStr.length;
   }
 
-  throw new Error('未匹配到');
+  throw new Error("未匹配到");
 }
 
+console.log(index_KMP("ababaaaba", "aaa"));
 
-console.log(index_KMP("ababaaaba", "aaa"))
-
-
-var strStr = function(haystack, needle) {
-  const n = haystack.length, m = needle.length;
+var strStr = function (haystack, needle) {
+  const n = haystack.length,
+    m = needle.length;
   if (m === 0) {
-      return 0;
+    return 0;
   }
   const pi = new Array(m).fill(0);
   for (let i = 1, j = 0; i < m; i++) {
-      while (j > 0 && needle[i] !== needle[j]) {
-          j = pi[j - 1];
-      }
-      if (needle[i] == needle[j]) {
-          j++;
-      }
-      pi[i] = j;
+    while (j > 0 && needle[i] !== needle[j]) {
+      j = pi[j - 1];
+    }
+    if (needle[i] == needle[j]) {
+      j++;
+    }
+    pi[i] = j;
   }
-  console.log(pi)
+  console.log(pi);
   for (let i = 0, j = 0; i < n; i++) {
-      while (j > 0 && haystack[i] != needle[j]) {
-          j = pi[j - 1];
-      }
-      if (haystack[i] == needle[j]) {
-          j++;
-      }
-      if (j === m) {
-          return i - m + 1;
-      }
+    while (j > 0 && haystack[i] != needle[j]) {
+      j = pi[j - 1];
+    }
+    if (haystack[i] == needle[j]) {
+      j++;
+    }
+    if (j === m) {
+      return i - m + 1;
+    }
   }
   return -1;
 };
 
-console.log(strStr("abaabaaf", "baa"))
+console.log(strStr("abaabaaf", "baa"));

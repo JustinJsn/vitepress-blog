@@ -1,4 +1,3 @@
-import path from "path";
 import { defineConfig } from "vitepress";
 import mathjax3 from "markdown-it-mathjax3";
 import nav from "./config/nav";
@@ -6,9 +5,9 @@ import { sidebarDataStructure, sidebarWebpack } from "./config/sidebar";
 
 const customElements = ["mjx-container"];
 export default defineConfig({
+  base: "/vitepress-blog",
   title: "JustinJsn博客",
   lastUpdated: true,
-  outDir: "/var/www/html",
   markdown: {
     config: (md) => {
       md.use(mathjax3);

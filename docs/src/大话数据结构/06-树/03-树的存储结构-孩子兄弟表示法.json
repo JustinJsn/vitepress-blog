@@ -1,0 +1,13 @@
+[
+  {
+    "data": "A",
+    "firstChild": {
+      "data": "B",
+      "next": null
+    },
+    "rightSibling": {
+      "data": "C",
+      "next": null
+    }
+  }
+]

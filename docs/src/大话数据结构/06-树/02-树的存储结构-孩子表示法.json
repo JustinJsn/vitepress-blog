@@ -1,0 +1,17 @@
+[
+  {
+    "data": "A",
+    "firstChild": {
+      "child": 1,
+      "next": 2
+    }
+  },
+  {
+    "data": "B",
+    "firstChild": null
+  },
+  {
+    "data": "C",
+    "firstChild": null
+  }
+]
