@@ -9,6 +9,21 @@ import {
 
 const customElements = ["mjx-container"];
 export default defineConfig({
+  head: [
+    [
+      "script",
+      {},
+      `
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?f3006f9baff014f1524b6a3ea423f970";
+          var s = document.getElementsByTagName("script")[0];
+          s.parentNode.insertBefore(hm, s);
+        })();
+        `,
+    ],
+  ],
   base: "/vitepress-blog/",
   title: "JustinJsn博客",
   lastUpdated: true,
