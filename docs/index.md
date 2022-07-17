@@ -2,27 +2,25 @@
 layout: home
 
 title: JustinJsn博客
-titleTemplate:
+titleTemplate: 技术学习、知识记录
 
 hero:
   name: JustinJsn博客
-  text:
-  tagline:
+  text: 📖
+  tagline: ✏️技术学习、知识记录
   actions:
     - theme: brand
       text: Get Started
-      link: /文档/webpack/01-webpack安装&配置
+      link: /文档/webpack/01-安装和配置
     - theme: alt
       text: View on GitHub
       link: https://github.com/JustinJsn/vitepress-blog
 
 features:
-  - title: "Vite: The DX that can't be beat"
-    details: Feel the speed of Vite. Instant server start and lightning fast HMR that stays fast regardless of the app size.
-  - title: Designed to be simplicity first
-    details: With Markdown-centered content, it's built to help you focus on writing and deployed with minimum configuration.
-  - title: Power of Vue meets Markdown
-    details: Enhance your content with all the features of Vue in Markdown, while being able to customize your site with Vue.
-  - title: Fully static yet still dynamic
-    details: Go wild with true SSG + SPA architecture. Static on page load, but engage users with 100% interactivity from there.
+  - title: "Vite: 当前博客使用 vitepress 构建"
+    details: 开发模式下可快速启动服务器，生产模式下打包更快速
+  - title: 📖 笔记
+    details: ✏️ 记录平时阅读技术/其他书籍类的知识点
+  - title: 📚 文档
+    details: ✏️ 记录某项技术起步时的实践
 ---
