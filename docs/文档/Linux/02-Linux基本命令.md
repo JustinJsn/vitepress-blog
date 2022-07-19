@@ -1,9 +1,5 @@
 # Linux 基本命令
 
-## 相关知识
-
-[冴羽博客 - 一份前端够用的 Linux 命令](https://github.com/mqyqingfeng/Blog/issues/239)
-
 ## rm 删除文件夹
 
 ```shell
