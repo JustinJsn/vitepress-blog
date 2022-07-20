@@ -16,6 +16,7 @@ export function sidebarDataStructure() {
         { text: "第 4 章 栈和队列", link: "/笔记/大话数据结构/04-栈和队列" },
         { text: "第 5 章 串", link: "/笔记/大话数据结构/05-串" },
         { text: "第 6 章 树", link: "/笔记/大话数据结构/06-树" },
+        { text: "第 7 章 图", link: "/笔记/大话数据结构/07-图" },
       ],
     },
   ];
