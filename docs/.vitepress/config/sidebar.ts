@@ -72,6 +72,18 @@ export function sidebarJavaScript() {
           text: "call和apply模拟实现",
           link: "/前端基础/JavaScript/03-call和apply模拟实现",
         },
+        {
+          text: "bind模拟实现",
+          link: "/前端基础/JavaScript/04-bind模拟实现",
+        },
+        {
+          text: "new模拟实现",
+          link: "/前端基础/JavaScript/05-new模拟实现",
+        },
+        {
+          text: "多种继承",
+          link: "/前端基础/JavaScript/06-多种继承",
+        },
       ],
     },
   ];

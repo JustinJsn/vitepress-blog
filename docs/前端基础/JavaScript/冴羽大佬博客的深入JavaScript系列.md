@@ -12,3 +12,8 @@
 8. [JavaScript 深入之闭包](https://github.com/mqyqingfeng/Blog/issues/9)
 9. [JavaScript 深入之参数按值传递](https://github.com/mqyqingfeng/Blog/issues/10)
 10. [JavaScript 深入之 call 和 apply 的模拟实现](https://github.com/mqyqingfeng/Blog/issues/11)
+11. [JavaScript 深入之 bind 的模拟实现](https://github.com/mqyqingfeng/Blog/issues/12)
+12. [JavaScript 深入之 new 的模拟实现](https://github.com/mqyqingfeng/Blog/issues/13)
+13. [JavaScript 深入之类数组对象与 arguments](https://github.com/mqyqingfeng/Blog/issues/14)
+14. [JavaScript深入之创建对象的多种方式以及优缺点](https://github.com/mqyqingfeng/Blog/issues/15)
+15. [JavaScript深入之继承的多种方式以及优缺点](https://github.com/mqyqingfeng/Blog/issues/16)

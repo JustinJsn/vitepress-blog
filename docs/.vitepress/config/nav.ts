@@ -27,7 +27,7 @@ export default function nav() {
       items: [
         {
           text: "JavaScript",
-          link: "/前端基础/JavaScript/01-原型和原型链",
+          link: "/前端基础/JavaScript/冴羽大佬博客的深入JavaScript系列",
         },
       ],
     },
