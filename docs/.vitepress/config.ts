@@ -5,6 +5,7 @@ import {
   sidebarDataStructure,
   sidebarWebpack,
   sidebarLinux,
+  sidebarJavaScript,
 } from "./config/sidebar";
 
 const customElements = ["mjx-container"];
@@ -71,6 +72,7 @@ export default defineConfig({
       "/笔记/大话数据结构": sidebarDataStructure(),
       "/文档/webpack": sidebarWebpack(),
       "/文档/Linux": sidebarLinux(),
+      "/前端基础/JavaScript": sidebarJavaScript(),
     },
     footer: {
       message: "MIT License",

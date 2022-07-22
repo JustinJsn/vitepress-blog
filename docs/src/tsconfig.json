@@ -1,0 +1,6 @@
+{
+  "compilerOptions": {
+    "outDir": "../../../webpack",
+    "allowJs": true
+  }
+}

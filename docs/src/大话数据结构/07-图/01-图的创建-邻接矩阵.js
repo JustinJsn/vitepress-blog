@@ -13,7 +13,7 @@ class MGraph {
    */
   constructor(numNodes, numEdges, nodes) {
     /** 顶点信息 */
-    this.vexs = nodes;
+    this.vertexs = nodes;
     /** 边/弧信息 */
     this.arc = null;
     /** 边的数量 */
@@ -27,7 +27,7 @@ class MGraph {
    * @param {Array} nodes 顶点
    */
   init() {
-    const len = this.vexs.length;
+    const len = this.vertexs.length;
     this.arc = new Array(len);
     for (let i = 0; i < len; i++) {
       this.arc[i] = new Array(len);
@@ -44,8 +44,8 @@ class MGraph {
    * @param {String|Number} weight 权值
    */
   addArc(node1, node2, weight) {
-    const head = this.vexs.indexOf(node1);
-    const tail = this.vexs.indexOf(node2);
+    const head = this.vertexs.indexOf(node1);
+    const tail = this.vertexs.indexOf(node2);
     if (head !== -1 && tail !== -1) {
       this.arc[head][tail] = weight;
       this.arc[tail][head] = this.arc[head][tail];
@@ -68,4 +68,4 @@ graph.addArc(v3, v1, 4);
 console.log(graph.numEdges);
 console.log(graph.numNodes)
 console.log(graph.arc);
-console.log(graph.vexs);
+console.log(graph.vertexs);

@@ -22,5 +22,14 @@ export default function nav() {
         },
       ],
     },
+    {
+      text: "前端基础",
+      items: [
+        {
+          text: "JavaScript",
+          link: "/前端基础/JavaScript/01-原型和原型链",
+        },
+      ],
+    },
   ];
 }

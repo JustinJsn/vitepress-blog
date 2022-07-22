@@ -1,6 +1,4 @@
-/**
- * 《大话数据结构》
- */
+/**《大话数据结构》 */
 export function sidebarDataStructure() {
   return [
     {
@@ -22,6 +20,7 @@ export function sidebarDataStructure() {
   ];
 }
 
+/** Webpack */
 export function sidebarWebpack() {
   return [
     {
@@ -39,6 +38,7 @@ export function sidebarWebpack() {
   ];
 }
 
+/** Linux */
 export function sidebarLinux() {
   return [
     {
@@ -47,6 +47,31 @@ export function sidebarLinux() {
       items: [
         { text: "Nginx安装", link: "/文档/Linux/01-安装Nginx" },
         { text: "Linux基本命令", link: "/文档/Linux/02-Linux基本命令" },
+      ],
+    },
+  ];
+}
+
+/** 前端基础-JavaScript */
+export function sidebarJavaScript() {
+  return [
+    {
+      text: "JavaScript",
+      collapsible: true,
+      items: [
+        {
+          text: "冴羽大佬博客的深入JavaScript系列",
+          link: "/前端基础/JavaScript/冴羽大佬博客的深入JavaScript系列",
+        },
+        { text: "原型和原型链", link: "/前端基础/JavaScript/01-原型和原型链" },
+        {
+          text: "动态作用域和静态作用域",
+          link: "/前端基础/JavaScript/02-词法作用域",
+        },
+        {
+          text: "call和apply模拟实现",
+          link: "/前端基础/JavaScript/03-call和apply模拟实现",
+        },
       ],
     },
   ];
